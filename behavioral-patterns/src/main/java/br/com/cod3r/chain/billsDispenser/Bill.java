@@ -18,7 +18,7 @@ public class Bill {
   }
 
   public void execute(Integer remaining){
-    if (remaining > value){
+    if (remaining >= value){
       int amountBills = remaining / value;
       remaining %= value;
       System.out.println(String.format("- %d bill(s) of $%d, $%d remaining", amountBills, value, remaining));
