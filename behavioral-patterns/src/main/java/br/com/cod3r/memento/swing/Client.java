@@ -1,5 +1,8 @@
 package br.com.cod3r.memento.swing;
 
+import br.com.cod3r.memento.swing.component.TextAreaWithMemory.TextAreaMemento;
+import br.com.cod3r.memento.swing.memory.Caretaker;
+import br.com.cod3r.memento.swing.memory.Memento;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 
@@ -41,8 +44,21 @@ public class Client {
 		
 		frame.add(bottomPanel, BorderLayout.SOUTH);
 		
-		
-		frame.setSize(400,200);  
+		frame.setSize(400,200);
 		frame.setVisible(true);
+
+		Caretaker caretaker = new Caretaker();
+		save.addActionListener(e -> {
+			caretaker.add(originator.save());
+			mementosList.addItem(caretaker.getHistoryList().size() + "");
+			mementosList.setSelectedItem(caretaker.getHistoryList().size() + "");
+			originator.requestFocusInWindow();
+
+		});
+
+		mementosList.addItemListener(e -> {
+			originator.restore((TextAreaMemento) caretaker.get(mementosList.getSelectedIndex()));
+			originator.requestFocusInWindow();
+		});
 	}
 }
