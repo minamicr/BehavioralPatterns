@@ -1,21 +1,33 @@
 package br.com.cod3r.memento.swing.memory;
 
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Caretaker {
-  List<Memento> mementos = new ArrayList<>();
+  Map<String, Memento> mementos = new HashMap<String, Memento>();
 
-  public List<Memento> getHistoryList(){
-    return Collections.unmodifiableList(mementos);
+  public Map<String, Memento> getHistoryList(){
+    return Collections.unmodifiableMap(mementos);
   }
 
-  public void add(Memento memento){
-    mementos.add(memento);
+  public void add(String identifier, Memento memento){
+    mementos.put(identifier, memento);
   }
 
-  public Memento get(int index){
-    return mementos.get(index);
+  public Memento get(String identifier){
+    return mementos.get(identifier);
+  }
+
+  public int getSize(){
+    switch (mementos.size()){
+      case 0:
+        return 0;
+      case 1:
+        return 1;
+      default:
+        return mementos.size()/2;
+    }
+
   }
 }
