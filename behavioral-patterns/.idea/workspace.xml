@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72ecaf-70c8-4c6c-a924-3e7bb49c138a" name="Default Changelist" comment="" />
+    <list default="true" id="6cdd1783-075f-4589-bc68-d0e88707002c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/cod3r/command/migration/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/cod3r/command/migration/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/cod3r/command/migration/commands/MigrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/cod3r/command/migration/commands/MigrationCommand.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +42,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1sWIxoplsoAyvAzbqJ2kC4TDEJn" />
+  <component name="ProjectId" id="1sZBerNWYWLDnMlXk9w9umPrCVC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,17 +50,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b72ecaf-70c8-4c6c-a924-3e7bb49c138a" name="Default Changelist" comment="" />
-      <created>1620982171970</created>
+      <changelist id="6cdd1783-075f-4589-bc68-d0e88707002c" name="Default Changelist" comment="" />
+      <created>1621070331448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1620982171970</updated>
+      <updated>1621070331448</updated>
     </task>
     <servers />
   </component>
@@ -70,5 +74,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
