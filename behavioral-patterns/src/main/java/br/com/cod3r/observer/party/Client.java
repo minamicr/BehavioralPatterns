@@ -1,32 +1,27 @@
 package br.com.cod3r.observer.party;
 
-import br.com.cod3r.observer.party.characters.Doorman;
-import br.com.cod3r.observer.party.characters.Wife;
+
+import br.com.cod3r.observer.party.observers.Friend;
+import br.com.cod3r.observer.party.observers.Wife;
+import br.com.cod3r.observer.party.subject.Doorman;
 
 public class Client {
 
 	public static void main(String[] args) {
 		Doorman reception = new Doorman();
-		Wife wife = new Wife(reception);
-		
-		wife.startPartyIfPossible();
-		
-		System.out.println("5 minutes later...");
-		wife.startPartyIfPossible();
-		
-		System.out.println("5 minutes later...");
-		wife.startPartyIfPossible();
-		
-		System.out.println("5 minutes later...");
-		wife.startPartyIfPossible();
-		
-		System.out.println("5 minutes later...");
-		wife.startPartyIfPossible();
-		
-		System.out.println("Husband is comming");
+		Wife wife = new Wife();
+		Friend friend = new Friend();
+
+		reception.add(wife);
+		reception.add(friend);
+
+		reception.setStatus(false);
+		reception.setStatus(false);
 		reception.setStatus(true);
-		
-		System.out.println("5 minutes later...");
-		wife.startPartyIfPossible();
+		reception.setStatus(false);
+		reception.setStatus(true);
+		reception.setStatus(true);
+
+
 	}
 }

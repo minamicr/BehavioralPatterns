@@ -13,7 +13,7 @@ public class Client {
 		}
 
 		Stream<Product> stream = StreamSupport.stream(cart.spliterator(), false);
-		Double sum = stream.reduce(0d, (acc, prod) -> acc + prod.getValue(), Double::sum);
+		Double sum = stream.reduce(0.0, (acc, prod) -> acc + prod.getValue(), Double::sum);
 
 		System.out.println(String.format("Total: %.2f", sum));
 	}
